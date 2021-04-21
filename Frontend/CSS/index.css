@@ -1,0 +1,107 @@
+body {
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 10px 30px;
+    background: rgb(60, 79, 112);
+    color: #fff;
+}
+
+ul {
+    padding: 20px;
+    margin: auto;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+}
+
+
+/* .login-form h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+} */
+
+.login-form input[type="password"],
+.login-form input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #4489ce;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.sign-form input[type="password"],
+.sign-form input[type="email"],
+.sign-form input[type="text"],
+.sign-form input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.sign-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #4489ce;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.login-form {
+    padding: 15px;
+}
+
+.sign-form {
+    padding: 15px;
+}
+
+.options {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.seleccion-sexo {
+    overflow: hidden;
+    overflow-y: scroll;
+}

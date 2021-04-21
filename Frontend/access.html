@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="CSS/access.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="game.html">Game</a></li>
+                <li>
+                    <a href="access.html">Log In/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="options">
+        <div class='login-form'>
+            <h1>Login</h1>
+            <form method='POST'>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit">
+            </form>
+        </div>
+        <div></div>
+        <div class='sign-form'>
+            <h1>Sign Up</h1>
+            <form method='POST' action="/access">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="pswd" placeholder="Password" required>
+                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                <input type="number" name="edad" placeholder="Edad" required>
+                <select class="seleccion-sexo">
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>Otro</option>
+                    </select>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
