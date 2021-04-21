@@ -32,7 +32,19 @@ app.post('/access', (req, res) => {
     res.redirect('/access.html');
 });
 
-app.get('/access', (req, res) => { db.query(`SELECT `) })
+app.get('/access', (req, res) => {
+    const logIn = req.body;
+    db.query(`SELECT * FROM users WHERE email = ${logIn.email} AND pswd = ${logIn.pswd}`, (err, rows, fiels) => {
+        if (err) {
+            throw err;
+        } else {
+            console.log("Log in successful");
+            res.redirect('index.html')
+                // console.log(rows);
+        }
+    })
+
+})
 
 
 const PORT = process.env.PORT || 5000; // Port for deployment or local (for development)
