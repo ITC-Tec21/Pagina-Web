@@ -25,22 +25,28 @@ db.connect((err) => {
     }
 });
 
-app.post('/access', (req, res) => {
-    console.log('llegue');
+app.post('/signup', (req, res) => {
     const newMember = req.body;
-    db.query(`INSERT INTO users(email, pswd, nombre, edad, sexo, curlvl) values('${newMember.email}','${newMember.pswd}','${newMember.nombre}','${newMember.edad}','${newMember.sexo}', 1 )`);
-    res.redirect('/access.html');
+    if (newMember.pswd.length >= 8) {
+        db.query(`INSERT INTO users(email, pswd, nombre, edad, sexo, curlvl, moves) values('${newMember.email}','${newMember.pswd}','${newMember.nombre}','${newMember.edad}','${newMember.sexo}', 1 , 0);`);
+        res.redirect('/access.html');
+    } else {
+        res.redirect('/index.html');
+    }
 });
 
-app.get('/access', (req, res) => {
+app.post('/login', (req, res) => {
     const logIn = req.body;
-    db.query(`SELECT * FROM users WHERE email = ${logIn.email} AND pswd = ${logIn.pswd}`, (err, rows, fiels) => {
+    db.query(`SELECT * FROM users WHERE email = '${logIn.email}' AND pswd = '${logIn.pswd}';`, (err, rows, fiels) => {
         if (err) {
             throw err;
         } else {
-            console.log("Log in successful");
-            res.redirect('index.html')
-                // console.log(rows);
+            if (rows[0] != undefined) {
+                res.redirect('game.html');
+            } else {
+                console.log("Invalid email or password");
+                res.redirect('access.html');
+            }
         }
     })
 

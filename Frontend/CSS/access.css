@@ -96,7 +96,6 @@ h1 {
 }
 
 .options {
-    align-content: center;
     display: flex;
     flex-direction: row;
 }

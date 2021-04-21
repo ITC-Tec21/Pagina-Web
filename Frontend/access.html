@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="CSS/access.css">
     <title>Login</title>
+    <script src="./JavaScript/userInfo.js"></script>
 </head>
 
 <body>
@@ -21,16 +22,16 @@
     <div class="options">
         <div class='login-form'>
             <h1>Login</h1>
-            <form method='GET'>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="pswd" placeholder="Password" required>
-                <input type="submit">
+            <form method='POST' action='/login'>
+                <input type="email" name="email" placeholder="Email" id="mail" required>
+                <input type="password" name="pswd" id="pswd" placeholder="Password" required>
+                <input type="submit" onclick="saveInLocal()">
             </form>
         </div>
         <div></div>
         <div class='sign-form'>
             <h1>Sign Up</h1>
-            <form method='POST' action="/access">
+            <form method='POST' action="/signup">
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="pswd" placeholder="Password" required>
                 <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
