@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="CSS/access.css">
     <title>Login</title>
     <script src="./JavaScript/userInfo.js"></script>
+    <script src="./JavaScript/loadUserInfo.js"></script>
 </head>
 
 <body>
@@ -18,6 +19,11 @@
                     <a href="access.html">Log In/Sign Up</a></li>
             </ul>
         </nav>
+        <div>
+            <p>
+                <span id="user-email" />
+            </p>
+        </div>
     </header>
     <div class="options">
         <div class='login-form'>
@@ -34,7 +40,8 @@
             <form method='POST' action="/signup">
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="pswd" placeholder="Password" required>
-                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                <input type="text" name="nombre" placeholder="Nombre(s)" required>
+                <input type="text" name="apellidos" placeholder="Apellidos" required>
                 <input type="number" name="edad" placeholder="Edad" required>
                 <select class="seleccion-sexo" id="sexo-selec" name="sexo">
                         <option value="Hombre">Hombre</option>

@@ -28,7 +28,7 @@ db.connect((err) => {
 app.post('/signup', (req, res) => {
     const newMember = req.body;
     if (newMember.pswd.length >= 8) {
-        db.query(`INSERT INTO users(email, pswd, nombre, edad, sexo, curlvl, moves) values('${newMember.email}','${newMember.pswd}','${newMember.nombre}','${newMember.edad}','${newMember.sexo}', 1 , 0);`);
+        db.query(`INSERT INTO users(email, pswd, nombre, apellidos, edad, sexo, curlvl, moves) values('${newMember.email}','${newMember.pswd}','${newMember.nombre}','${newMember.apellidos}','${newMember.edad}','${newMember.sexo}', 1 , 0);`);
         res.redirect('/access.html');
     } else {
         res.redirect('/index.html');
