@@ -5,7 +5,96 @@
     font-family: 'Actor', sans-serif;
 }
 
-/* navigation bar */
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(75, 127, 128);
+}
+
+/* solo index */
+
+#info-juego {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "descripcion foto";
+    padding: 10px;
+    box-shadow: 5px 10px 18px black;
+    border-radius: 25px;
+    background-color: white;
+}
+#info-juego div{
+    padding: 20px;
+}
+#descripcion-juego {
+    grid-area: descripcion;
+    text-align: center;
+}
+#imagen-juego {
+    grid-area: foto;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+#proposito {
+    padding: 40px;
+    box-shadow: 5px 10px 18px black;
+    border-radius: 25px;
+    background-color: white;
+}
+
+/* todos los botones */
+
+.button {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 16px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+  
+.button:hover {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: rgb(149,4,78);
+    padding: 16px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+}
+
+/* content for every tab */
+#content{
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 70px;
+}
+
+#content div{
+    margin-top: 50px;
+}
+
+/* navigation bar for every tab*/
 #nav-bar {
     display: grid;
     overflow: hidden;
@@ -46,11 +135,11 @@
     text-decoration: none;
     transition-duration: 0.2s;
     font-size: 20px;
+    background-color: black;
 }
   
 #nav-bar a:hover {
-    background: black;
     /* background: rgb(51, 51, 51); */
-    color: rgb(245, 119, 186);
+    color: rgb(149,4,78);
 }
 /* navigation bar end */
