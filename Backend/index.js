@@ -48,9 +48,23 @@ app.post('/login', (req, res) => {
                 res.redirect('access.html');
             }
         }
-    })
+    });
+});
 
-})
+app.get("/showInfo", (req, res) => {
+    db.query("SELECT * FROM users", (error, rows, fields) => {
+        if (error) {
+            throw error
+        } else {
+            res.json(rows);
+        }
+    });
+});
+
+app.post('/sendData', (req, res) => {
+    const updateProgress = req.body;
+    console.log(updateProgress);
+});
 
 
 const PORT = process.env.PORT || 5000; // Port for deployment or local (for development)
