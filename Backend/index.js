@@ -32,9 +32,9 @@ app.post('/signup', (req, res) => {
     const newMember = req.body;
     if (newMember.pswd.length >= 8) {
         db.query(`INSERT INTO users(email, pswd, nombre, apellidos, edad, sexo, curlvl, moves) values('${newMember.email}','${newMember.pswd}','${newMember.nombre}','${newMember.apellidos}','${newMember.edad}','${newMember.sexo}', 1 , 0);`);
-        res.redirect('/access.html');
+        res.redirect('login.html');
     } else {
-        res.redirect('/index.html');
+        res.redirect('index.html');
     }
 });
 
@@ -45,15 +45,16 @@ app.post('/login', (req, res) => {
             throw err;
         } else {
             if (rows[0] != undefined) {
-                res.redirect('game.html');
+                res.redirect('juego.html');
             } else {
                 console.log("Invalid email or password");
-                res.redirect('access.html');
+                res.redirect('login.html');
             }
         }
     });
 });
 
+// Send all users for showing in table
 app.get("/showInfo", (req, res) => {
     db.query("SELECT * FROM users", (error, rows, fields) => {
         if (error) {
@@ -77,7 +78,7 @@ app.delete('deleteLocal', (req, res) => {
     localStorage.removeItem('email');
     localStorage.removeItem('pswd');
     console.log('user deleted');
-    res.redirect('access.html');
+    res.redirect('login.html');
 });
 
 app.post('/sendData', (req, res) => {
