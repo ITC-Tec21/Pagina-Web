@@ -59,7 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Node_modules
-**/node_modules
+**/node_modules/
 
 # Backend Local Storage
-**/scratch
+**/scratch/
