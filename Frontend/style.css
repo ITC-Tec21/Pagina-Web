@@ -5,6 +5,17 @@
     font-family: 'Exo', sans-serif;
 }
 
+.aprende-img {
+    width: 40%;
+    margin: 20px auto;
+}
+
+.aprende {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 h1 {
     font-size: 50px;
     margin-top: 2m;
