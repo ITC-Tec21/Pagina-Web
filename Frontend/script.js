@@ -148,3 +148,12 @@ async function deleteLocalUser() {
     alert("Logged Out");
     location.reload();
 }
+
+window.addEventListener('load', () => {
+    if (localStorage.getItem('email')) {
+        document.getElementById('boton-sesion').innerHTML = '<a id="boton-sesion" onclick="deleteLocalUser()" href="#">Salir</a>'
+            // ' < input type = "submit" onclick = "deleteLocalUser()" value = "Logout" class = "button" id = "logout-button" > ';
+    } else {
+        document.getElementById('boton-sesion').innerHTML = '<a href = "login.html" > Iniciar sesión </a>';
+    }
+});
