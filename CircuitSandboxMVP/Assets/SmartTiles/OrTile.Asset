@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d359431a70530744bc8f3f22495bda7, type: 3}
   m_Name: OrTile
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -3356400513334823418, guid: 8feef8aa43dbf5440862ae31bb8c9a72,
+  m_Sprite: {fileID: -2196678508633577236, guid: 4a6e4ccd1d0822149a84122e479a870e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

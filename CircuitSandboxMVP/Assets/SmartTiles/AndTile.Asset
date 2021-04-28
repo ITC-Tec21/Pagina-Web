@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d81e99613b81be408f29e5ea733ca95, type: 3}
   m_Name: AndTile
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -8624013652991795624, guid: 8feef8aa43dbf5440862ae31bb8c9a72,
+  m_Sprite: {fileID: 7674671219895783242, guid: 4a6e4ccd1d0822149a84122e479a870e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

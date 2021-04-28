@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec700db32480a25409dd7c459ed19c61, type: 3}
   m_Name: NotTile
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1816551247677826677, guid: 8feef8aa43dbf5440862ae31bb8c9a72,
+  m_Sprite: {fileID: -3270805815549234599, guid: 4a6e4ccd1d0822149a84122e479a870e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

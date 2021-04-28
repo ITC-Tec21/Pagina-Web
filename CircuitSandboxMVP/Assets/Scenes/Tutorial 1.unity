@@ -1171,7 +1171,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -1180,7 +1180,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -1189,7 +1189,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -1198,7 +1198,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -1259,16 +1259,16 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 4
-    m_Data: {fileID: -1672191658627575551, guid: b67a9d616a93e85438af7448fadca778,
-      type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -1309792524465016840, guid: b67a9d616a93e85438af7448fadca778,
+  - m_RefCount: 4
+    m_Data: {fileID: 1135619873572007795, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4157387115229803583, guid: b67a9d616a93e85438af7448fadca778,
+    m_Data: {fileID: -4425720471360118172, guid: 4a6e4ccd1d0822149a84122e479a870e,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 4572077078933004537, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   m_TileMatrixArray:
   - m_RefCount: 6
@@ -3532,6 +3532,7 @@ GameObject:
   - component: {fileID: 1496130453}
   - component: {fileID: 1496130459}
   - component: {fileID: 1496130458}
+  - component: {fileID: 1496130455}
   m_Layer: 0
   m_Name: MasterManager
   m_TagString: Untagged
@@ -3580,6 +3581,18 @@ PolygonCollider2D:
       - {x: 1.4612153, y: -1.5462743}
       - {x: 1.4580426, y: -0.85291463}
       - {x: 2.0553946, y: -0.85502326}
+--- !u!114 &1496130455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496130452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83cf1196844b75e4781f3541552a2604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &1496130456
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3654,7 +3667,7 @@ MonoBehaviour:
   tilemap: {fileID: 640605034}
   allSprites: {fileID: 11400000, guid: b43bed36279b9be4cb9ddd202735a509, type: 2}
   sandBoxMode: 0
-  tutrorialMode: 1
+  tutorialMode: 1
 --- !u!1 &1508005670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4807,7 +4820,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0.8405122
+  orthographic size: 0.9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5223,6 +5236,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pause
+      objectReference: {fileID: 0}
+    - target: {fileID: 7405960308124669311, guid: 00ec5ee25c6d42f46b13dbea3e60af0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1496130455}
+    - target: {fileID: 7405960308124669311, guid: 00ec5ee25c6d42f46b13dbea3e60af0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GotToPause
+      objectReference: {fileID: 0}
+    - target: {fileID: 7405960308124669311, guid: 00ec5ee25c6d42f46b13dbea3e60af0e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00ec5ee25c6d42f46b13dbea3e60af0e, type: 3}
