@@ -15,4 +15,7 @@ public class AllSprites : ScriptableObject
     public Sprite outputOnSprite;
     public Sprite outputOffSprite;
     public Sprite placeholderSprite;
+    public Sprite placeholderBufferSprite;
+
+    public Sprite bufferSprite;
 }

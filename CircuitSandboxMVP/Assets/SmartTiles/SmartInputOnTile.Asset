@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6367f52e9afe7840ad0fdc9567dc81b, type: 3}
   m_Name: SmartInputOnTile
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 2098044937402999767, guid: b67a9d616a93e85438af7448fadca778,
+  m_Sprite: {fileID: 7107420239422786803, guid: 4a6e4ccd1d0822149a84122e479a870e,
     type: 3}
   m_Color: {r: 0.9960785, g: 0.9960785, b: 0.9960785, a: 1}
   m_Transform:

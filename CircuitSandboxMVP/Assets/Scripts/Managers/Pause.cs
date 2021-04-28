@@ -5,11 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
-    public GameObject screen;
-    public bool tutorialMode;
-
-    public void TogglePause()
+    public void GotToPause()
     {
-        SceneManager.LoadScene("Pause Scene");
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Pause");
+    }
+
+    public void LeavePause()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("Level"));
+    }
+
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

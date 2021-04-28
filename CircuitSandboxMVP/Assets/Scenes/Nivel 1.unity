@@ -233,7 +233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8624013652991795624, guid: 8feef8aa43dbf5440862ae31bb8c9a72,
+  m_Sprite: {fileID: 7674671219895783242, guid: 4a6e4ccd1d0822149a84122e479a870e,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -262,12 +262,12 @@ GameObject:
   m_Component:
   - component: {fileID: 353138902}
   - component: {fileID: 353138900}
-  - component: {fileID: 353138905}
   - component: {fileID: 353138898}
   - component: {fileID: 353138901}
   - component: {fileID: 353138904}
   - component: {fileID: 353138903}
   - component: {fileID: 353138899}
+  - component: {fileID: 353138905}
   m_Layer: 0
   m_Name: MasterManager
   m_TagString: Untagged
@@ -410,7 +410,7 @@ MonoBehaviour:
   tilemap: {fileID: 1914188255}
   allSprites: {fileID: 11400000, guid: b43bed36279b9be4cb9ddd202735a509, type: 2}
   sandBoxMode: 0
-  tutrorialMode: 0
+  tutorialMode: 0
 --- !u!114 &353138905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,8 +458,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: 0}
-  m_SizeDelta: {x: -50, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411606185
 MonoBehaviour:
@@ -760,7 +760,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3356400513334823418, guid: 8feef8aa43dbf5440862ae31bb8c9a72,
+  m_Sprite: {fileID: -2196678508633577236, guid: 4a6e4ccd1d0822149a84122e479a870e,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2845,7 +2845,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 10
-    m_Data: {fileID: 8892986464958430564, guid: b67a9d616a93e85438af7448fadca778,
+    m_Data: {fileID: 1135619873572007795, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -2862,16 +2862,16 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: -1309792524465016840, guid: b67a9d616a93e85438af7448fadca778,
+    m_Data: {fileID: -4425720471360118172, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -1464938693009276741, guid: b67a9d616a93e85438af7448fadca778,
+    m_Data: {fileID: 8353354811649150088, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4157387115229803583, guid: b67a9d616a93e85438af7448fadca778,
+    m_Data: {fileID: 4572077078933004537, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 2098044937402999767, guid: b67a9d616a93e85438af7448fadca778,
+    m_Data: {fileID: 7107420239422786803, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   m_TileMatrixArray:
   - m_RefCount: 15

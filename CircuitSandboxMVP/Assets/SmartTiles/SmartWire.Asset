@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f415c5dbb5f7c4fa1680d6d88beff2, type: 3}
   m_Name: SmartWire
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 8892986464958430564, guid: b67a9d616a93e85438af7448fadca778,
+  m_Sprite: {fileID: 1135619873572007795, guid: 4a6e4ccd1d0822149a84122e479a870e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:

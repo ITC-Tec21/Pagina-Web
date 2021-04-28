@@ -8,7 +8,7 @@ using UnityEditor;
 
 public class AndTile : Tile
 {
-        public AllSprites sprites;
+    public AllSprites sprites;
     public override void RefreshTile(Vector3Int location, ITilemap tilemap)
     {
         Tilemap realTilemap = tilemap.GetComponent<Tilemap>();

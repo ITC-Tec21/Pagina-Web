@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a59c9024db6ab9045ab533bc9e2845f7, type: 3}
   m_Name: TruePlaceholderTile
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -2235080870836265277, guid: 4a6e4ccd1d0822149a84122e479a870e,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
