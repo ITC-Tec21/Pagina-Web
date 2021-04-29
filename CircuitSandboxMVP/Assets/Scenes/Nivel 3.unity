@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 34981602}
   - component: {fileID: 34981605}
   - component: {fileID: 34981604}
+  - component: {fileID: 34981610}
   m_Layer: 0
   m_Name: MasterManager
   m_TagString: Untagged
@@ -329,6 +330,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &34981610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34981601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83cf1196844b75e4781f3541552a2604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &41499763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1333,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 450839296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 34981610}
+        m_MethodName: GotToPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &450839296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2154,7 +2178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000030994, y: 36}
+  m_AnchoredPosition: {x: -0.0000030994, y: 89}
   m_SizeDelta: {x: 234.66776, y: 154.0033}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1144632635
@@ -2176,8 +2200,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Para completar el nivel deberas seleccionar la compuerta indicada y ponerla
-    sobre una de las ranuras de tal forma que la salida del circuito se prenda.
+  m_text: "Para completar el nivel deberas seleccionar la compuerta indicada y ponerla
+    sobre una de las ranuras de tal forma que la salida del circuito se prenda. Intenta
+    completar este nivel sin que se repita la misma compuerta m\xE1s de 1 vez."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d19f5066af2a135458c8656a3685e511, type: 2}
   m_sharedMaterial: {fileID: 2202747659629424652, guid: d19f5066af2a135458c8656a3685e511,
@@ -2805,7 +2830,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2814,7 +2839,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2823,7 +2848,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2832,7 +2857,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2841,7 +2866,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 7
-      m_TileSpriteIndex: 4294967295
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2859,7 +2884,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2877,7 +2902,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2895,7 +2920,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2913,7 +2938,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 4
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
@@ -2967,26 +2992,31 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 9
-    m_Data: {fileID: 1135619873572007795, guid: 4a6e4ccd1d0822149a84122e479a870e,
+  - m_RefCount: 1
+    m_Data: {fileID: 2648325866680607830, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 772082070742088598, guid: 4a6e4ccd1d0822149a84122e479a870e, type: 3}
+  - m_RefCount: 2
+    m_Data: {fileID: -9181047616411568619, guid: 4a6e4ccd1d0822149a84122e479a870e,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -2452087422589007274, guid: 4a6e4ccd1d0822149a84122e479a870e,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -589216064899178558, guid: 4a6e4ccd1d0822149a84122e479a870e,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 7475015201649808073, guid: 4a6e4ccd1d0822149a84122e479a870e,
+      type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 5869338446453875821, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 3
+    m_Data: {fileID: 4696976085749793147, guid: 4a6e4ccd1d0822149a84122e479a870e,
+      type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -4425720471360118172, guid: 4a6e4ccd1d0822149a84122e479a870e,
+    m_Data: {fileID: 4399496962380963169, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 8353354811649150088, guid: 4a6e4ccd1d0822149a84122e479a870e,
@@ -3693,7 +3723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 173}
+  m_AnchoredPosition: {x: 0, y: 226}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1867696940
@@ -3944,8 +3974,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -280}
-  m_SizeDelta: {x: 304.13416, y: 474.34375}
+  m_AnchoredPosition: {x: 200, y: -297}
+  m_SizeDelta: {x: 304.13416, y: 562.64075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027307553
 MonoBehaviour:
