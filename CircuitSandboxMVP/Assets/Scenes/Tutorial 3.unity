@@ -1260,9 +1260,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Si el NOT est\xE1 conectado a un cable apagado, prende el otro, y si est\xE1
-    conectado a uno prendido, lo apaga. Al igual que el repetidor, no prende o apaga
-    el cable a su derecha nunca, de hecho ninguna compuerta lo hace."
+  m_text: "Si NOT est\xE1 conectado a un cable apagado a su izquierda, prende el
+    cable a su derecha, pero si est\xE1 conectado a uno prendido a su izquierda,
+    apaga el de la derecha. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d19f5066af2a135458c8656a3685e511, type: 2}
   m_sharedMaterial: {fileID: 2202747659629424652, guid: d19f5066af2a135458c8656a3685e511,
@@ -2048,7 +2048,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -2066,7 +2066,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -2075,7 +2075,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 14
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -2111,7 +2111,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -2147,7 +2147,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -2156,7 +2156,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 9
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -2174,7 +2174,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
@@ -2223,12 +2223,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
-    m_Data: {fileID: -9181047616411568619, guid: 4a6e4ccd1d0822149a84122e479a870e,
-      type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -589216064899178558, guid: 4a6e4ccd1d0822149a84122e479a870e,
-      type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -4425720471360118172, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
@@ -2236,11 +2234,12 @@ Tilemap:
     m_Data: {fileID: -3270805815549234599, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -649488958301727079, guid: 4a6e4ccd1d0822149a84122e479a870e,
+    m_Data: {fileID: -589216064899178558, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 6
+  - m_RefCount: 5
+    m_Data: {fileID: 1135619873572007795, guid: 4a6e4ccd1d0822149a84122e479a870e,
+      type: 3}
+  - m_RefCount: 4
     m_Data: {fileID: 4696976085749793147, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 1
@@ -2250,7 +2249,7 @@ Tilemap:
     m_Data: {fileID: 4572077078933004537, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 4189387642026146001, guid: 4a6e4ccd1d0822149a84122e479a870e,
+    m_Data: {fileID: -5943927278071335950, guid: 4a6e4ccd1d0822149a84122e479a870e,
       type: 3}
   m_TileMatrixArray:
   - m_RefCount: 17
