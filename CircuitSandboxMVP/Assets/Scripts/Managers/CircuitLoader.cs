@@ -248,11 +248,16 @@ public class CircuitLoader : MonoBehaviour
         if(!sandBoxMode && !tutorialMode && Circuit.circuitComponents[outputLocation].on)
         {
             bool slotsCovered = true;
+            bool bufferSlots = true;
             foreach(Vector3Int slot in placeholders)
             {
                 slotsCovered = !tilemap.GetTile<PlaceholderTile>(slot) ? slotsCovered : false;
             }
-            if(slotsCovered)
+            foreach(Vector3Int slot in placeholderBuffers)
+            {
+                bufferSlots = !tilemap.GetTile<PlaceholderBufferTile>(slot) ? bufferSlots : false;
+            }
+            if(slotsCovered && bufferSlots)
             {
                 gameObject.GetComponent<LevelUI>().LevelCompleted();
             }
